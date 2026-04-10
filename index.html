@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon_io/favicon-16x16.png">
+
+  <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <title>basketball-scoreboard</title>
+</head>
+
+<body class="bg-[#1B244A] h-dvh flex place-items-center">
+  <div class="m-auto text-center">
+    <div class="max-w-106.25 grid grid-cols-2 place-items-center m-auto gap-5">
+      <section class="flex flex-col items-center gap-5">
+        <h1 class="text-[#EEEEEE] text-3xl font-wallpoet">HOME</h1>
+        <h2 id="home-display" class="text-[#F94F6D] font-cursed bg-[#080001] w-38.75 h-30 text-center pt-5 text-8xl">0
+        </h2>
+        <div class="font-cursed text-xl">
+          <button data-points="1"
+            class="home-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+1</button>
+          <button data-points="2"
+            class="home-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+2</button>
+          <button data-points="3"
+            class="home-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+3</button>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center gap-5">
+        <h1 class="text-[#EEEEEE] text-3xl font-wallpoet">GUEST</h1>
+        <h2 id="guest-display" class="text-[#F94F6D] font-cursed bg-[#080001] w-38.75 h-30 text-center pt-5 text-8xl">0
+        </h2>
+        <div class="font-cursed text-xl">
+          <button data-points="1"
+            class="guest-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+1</button>
+          <button data-points="2"
+            class="guest-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+2</button>
+          <button data-points="3"
+            class="guest-btn text-[#9AABD8] border border-[#9AABD8] rounded-xs w-10 h-10">+3</button>
+        </div>
+      </section>
+    </div>
+    <button id="new-game" class="text-[#EEEEEE] text-xl font-wallpoet border-[#9AABD8] mt-10 p-2 border-3 border-dashed">NEW GAME</button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

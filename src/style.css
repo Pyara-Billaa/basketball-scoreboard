@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme{
+    --font-cursed: 'Cursed Timer ULiL', sans-serif;
+    --font-wallpoet:"Wallpoet", sans-serif;
+}
